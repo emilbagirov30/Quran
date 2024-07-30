@@ -30,7 +30,7 @@ class LanguageSelectionActivity : AppCompatActivity() {
         editor = sharedPref.edit()
         val language:String = sharedPref.getString("language", "null").toString()
 
-        if (!language.equals("null")){
+        if (language != "null"){
             saveLanguage(language)
             switchToMainActivity ()
         }
