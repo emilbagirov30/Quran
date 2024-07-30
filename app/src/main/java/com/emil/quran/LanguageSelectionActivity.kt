@@ -1,7 +1,9 @@
 package com.emil.quran
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -15,13 +17,23 @@ class LanguageSelectionActivity : AppCompatActivity() {
     private lateinit var rus: ImageView
     private lateinit var eng: ImageView
     private lateinit var next: Button
-    @SuppressLint("MissingInflatedId")
+    private lateinit var sharedPref: SharedPreferences
+    private lateinit var editor: SharedPreferences.Editor
+    @SuppressLint("MissingInflatedId", "CommitPrefEdits")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_language_selection)
         rus = findViewById(R.id.iv_rus)
         eng = findViewById(R.id.iv_eng)
         next = findViewById(R.id.bt_next)
+        sharedPref = getSharedPreferences("appData", Context.MODE_PRIVATE)
+        editor = sharedPref.edit()
+        val language:String = sharedPref.getString("language", "null").toString()
+
+        if (!language.equals("null")){
+            saveLanguage(language)
+            switchToMainActivity ()
+        }
 
        rus.setOnClickListener {
             selectImage(it)
@@ -31,9 +43,7 @@ class LanguageSelectionActivity : AppCompatActivity() {
             selectImage(it)
         }
         next.setOnClickListener {
-            val switchingToMainActivity= Intent(this, MainActivity::class.java)
-            startActivity(switchingToMainActivity)
-            finish()
+            switchToMainActivity ()
         }
 
     }
@@ -44,10 +54,20 @@ class LanguageSelectionActivity : AppCompatActivity() {
        next.visibility = View.VISIBLE
         selectedImageView.isSelected = true
 
-        if (selectedImageView == rus) {
-            ManagingSettings.setLocale(this@LanguageSelectionActivity, "ru");
-        } else{
-            ManagingSettings.setLocale(this@LanguageSelectionActivity, "en");
-        }
+        if (selectedImageView == rus) saveLanguage("ru")
+         else saveLanguage("en")
+
+    }
+
+    private fun switchToMainActivity (){
+        val switchingToMainActivity= Intent(this, MainActivity::class.java)
+        startActivity(switchingToMainActivity)
+        finish()
+    }
+
+    private fun saveLanguage (l:String){
+        ManagingSettings.setLocale(this@LanguageSelectionActivity, l);
+        editor.putString("language", l)
+        editor.apply()
     }
 }
