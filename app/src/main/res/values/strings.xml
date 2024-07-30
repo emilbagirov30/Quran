@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Holy Quran</string>
+    <string name="app_name" translatable="false">Holy Quran</string>
     <string name="open">Open Navigation Drawer</string>
     <string name="close">Close Navigation Drawer</string>
     <string name="next">continue</string>
@@ -118,10 +118,116 @@
     <string name="sura_112">112. Al-Ikhlas (The Sincerity)</string>
     <string name="sura_113">113. Al-Falaq (The Daybreak)</string>
     <string name="sura_114">114. An-Nas (The Mankind)</string>
+    <string name="settings">Settings</string>
+    <string name="language">language:</string>
+    <string name="save">Apply</string>
+    <string name="Names">99 Names of Allah</string>
+    <string-array name="languages_array">
+        <item>Русский</item>
+        <item>English</item>
+    </string-array>
+    <string name="info">The Reader: Muhammad Al Luhaidan\nTranslated into Russian by Elmir Kuliyev
+    </string>
 
-
-
-    <string name="content_sura_1">@string/content_sura_1_eng</string>
-    <string name="content_sura_2">@string/content_sura_2_eng</string>
+    <string name="NamesOfGod">\n 1. Allah (The One God)\n
+2. Ar-Rahman (The Most Gracious to all in this world)\n
+3. Ar-Rahim (The Most Merciful to believers in the hereafter)\n
+4. Al-Malik (The Sovereign of all)\n
+5. Al-Quddus (Free from defects)\n
+6. As-Salam (The Giver of peace and safety to His creations)\n
+7. Al-Mu\'min (The Giver of security and trust to His faithful servants)\n
+8. Al-Muhaymin (The Guardian)\n
+9. Al-Aziz (The Almighty, The Invincible)\n
+10. Al-Jabbar (The Compeller, The Restorer)\n
+11. Al-Mutakabbir (The Sole Possessor of Glory)\n
+12. Al-Khaliq (The Creator)\n
+13. Al-Bari\' (The Evolver, The Fashioner)\n
+14. Al-Musawwir (The Fashioner of forms)\n
+15. Al-Ghaffar (The Constant Forgiver)\n
+16. Al-Kahhar (The All-Prevailing One)\n
+17. Al-Wahhab (The Supreme Bestower)\n
+18. Ar-Razzaq (The Provider)\n
+19. Al-Fattah (The Opener of Goodness)\n
+20. Al-\'Alim (The All-Knowing)\n
+21. Al-Qabid (The Withholder)\n
+22. Al-Basit (The Extender)\n
+23. Al-Hafid (The Reducer)\n
+24. Ar-Rafi\' (The Exalter)\n
+25. Al-Mu\'izz (The Honourer)\n
+26. Al-Mudhill (The Dishonourer)\n
+27. As-Sami\' (The All-Hearing)\n
+28. Al-Basir (The All-Seeing)\n
+29. Al-Hakam (The Impartial Judge)\n
+30. Al-\'Adl (The Utterly Just)\n
+31. Al-Latif (The Subtle One)\n
+32. Al-Khabir (The All-Aware)\n
+33. Al-Halim (The Forbearing)\n
+34. Al-\'Azim (The Magnificent)\n
+35. Al-Ghafur (The Great Forgiver)\n
+36. Ash-Shakur (The Most Appreciative)\n
+37. Al-\'Aliy (The Most High, The Exalted)\n
+38. Al-Kabir (The Most Great)\n
+39. Al-Hafiz (The Preserver)\n
+40. Al-Muqit (The Sustainer)\n
+41. Al-Hasib (The Reckoner)\n
+42. Al-Jalil (The Majestic)\n
+43. Al-Karim (The Generous)\n
+44. Ar-Raqib (The Watchful)\n
+45. Al-Mujib (The Responsive One)\n
+46. Al-Wasi\' (The All-Encompassing)\n
+47. Al-Hakim (The All-Wise)\n
+48. Al-Wadud (The Most Loving)\n
+49. Al-Majid (The Glorious)\n
+50. Al-Ba\'ith (The Resurrector)\n
+51. Ash-Shahid (The Witness)\n
+52. Al-Haqq (The Absolute Truth)\n
+53. Al-Wakil (The Trustee)\n
+54. Al-Qawiyy (The All-Strong)\n
+55. Al-Matin (The Firm, The Steadfast)\n
+56. Al-Waliyy (The Protecting Associate)\n
+57. Al-Hamid (The Praiseworthy)\n
+58. Al-Muhsi (The All-Enumerating)\n
+59. Al-Mubdi\' (The Originator)\n
+60. Al-Mu\'id (The Restorer)\n
+61. Al-Muhyi (The Giver of Life)\n
+62. Al-Mumit (The Creator of Death)\n
+63. Al-Hayy (The Ever-Living)\n
+64. Al-Qayyum (The Sustainer)\n
+65. Al-Wajid (The Perceiver)\n
+66. Al-Majid (The Illustrious)\n
+67. Al-Wahid (The One)\n
+68. As-Samad (The Eternal)\n
+69. Al-Qadir (The Omnipotent)\n
+70. Al-Muqtadir (The Powerful)\n
+71. Al-Muqaddim (The Expediter)\n
+72. Al-Mu\'akhkhir (The Delayer)\n
+73. Al-Awwal (The First)\n
+74. Al-Akhir (The Last)\n
+75. Az-Zahir (The Manifest)\n
+76. Al-Batin (The Hidden)\n
+77. Al-Wali (The Sole Ruler)\n
+78. Al-Muta\'ali (The Self Exalted)\n
+79. Al-Bar (The Source of All Goodness)\n
+80. At-Tawwab (The Ever-Pardoning)\n
+81. Al-Muntaqim (The Avenging)\n
+82. Al-\'Afuww (The Pardoner)\n
+83. Ar-Ra\'uf (The Most Kind)\n
+84. Al-Malikul-Mulk (The Master of the Kingdom)\n
+85. Dhul-Jalali wal-Ikram (The Lord of Glory and Honour)\n
+86. Al-Muqsit (The Just)\n
+87. Al-Jami\' (The Gatherer, The Uniter)\n
+88. Al-Ghaniyy (The Self-Sufficient)\n
+89. Al-Mughni (The Enricher)\n
+90. Al-Mani\' (The Withholder)\n
+91. Ad-Darr (The Distresser)\n
+92. An-Nafi\' (The Propitious)\n
+93. An-Nur (The Light)\n
+94. Al-Hadi (The Guide)\n
+95. Al-Badi\' (The Incomparable)\n
+96. Al-Baqi (The Ever-Surviving)\n
+97. Al-Waris (The Inheritor)\n
+98. Ar-Rashid (The Guide to the Right Path)\n
+99. As-Sabur (The Patient)\n
+</string>
 
 </resources>
