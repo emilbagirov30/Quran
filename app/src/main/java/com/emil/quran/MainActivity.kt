@@ -1,9 +1,13 @@
 package com.emil.quran
 
 import android.annotation.SuppressLint
+import android.content.Context
+import android.content.SharedPreferences
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.text.SpannableString
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -13,7 +17,11 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.navigation.NavigationView
+import java.io.BufferedReader
+import java.io.IOException
+import java.io.InputStreamReader
 import kotlin.concurrent.fixedRateTimer
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var drawerLayout: DrawerLayout
@@ -29,7 +37,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var progressBar: ProgressBar
     private lateinit var bottomSheetTitle: TextView
     private var currentSura = 1
-
+    private lateinit var sharedPref: SharedPreferences
+    private lateinit var language: String
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +54,8 @@ class MainActivity : AppCompatActivity() {
         progressBar = bottomSheetView.findViewById(R.id.progress_bar)
         bottomSheetTitle = bottomSheetView.findViewById(R.id.bottom_sheet_title)
         bottomSheetDialog.setContentView(bottomSheetView)
-
+        sharedPref = getSharedPreferences("appData", Context.MODE_PRIVATE)
+        language = sharedPref.getString("language", "null").toString()
         mediaPlayer = MediaPlayer()
 
         updateSura(currentSura)
@@ -95,12 +105,17 @@ class MainActivity : AppCompatActivity() {
                     currentSura = 2
                     updateSura(currentSura)
                 }
+                R.id.it_sura_3 -> {
+                    currentSura = 3
+                    updateSura(currentSura)
+                }
             }
             drawerLayout.closeDrawers()
             true
         }
     }
 
+    @SuppressLint("DiscouragedApi")
     private fun updateSura(suraNumber: Int) {
         if (suraNumber>1) back.visibility= View.VISIBLE
         else back.visibility= View.GONE
@@ -111,8 +126,9 @@ class MainActivity : AppCompatActivity() {
 
 
         val titleResId = resources.getIdentifier("sura_$suraNumber", "string", packageName)
-        val contentResId = resources.getIdentifier("content_sura_$suraNumber", "string", packageName)
         val audioResId = resources.getIdentifier("sura_$suraNumber", "raw", packageName)
+
+
 
         if (::mediaPlayer.isInitialized) {
             if (mediaPlayer.isPlaying) {
@@ -123,10 +139,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         title.text = getString(titleResId)
-        content.text = getString(contentResId)
         bottomSheetTitle.text = getString(titleResId)
         pausePosition = 0
-
+        loadTextFromFile("sura_${suraNumber}_${language}.txt")
         mediaPlayer = MediaPlayer.create(this, audioResId)
     }
 
@@ -138,6 +153,17 @@ class MainActivity : AppCompatActivity() {
                     progressBar.progress = mediaPlayer.currentPosition
                 }
             }
+        }
+    }
+    private fun loadTextFromFile(fileName: String) {
+        try {
+            val inputStream = assets.open(fileName)
+            val reader = BufferedReader(InputStreamReader(inputStream))
+            val text = reader.readText()
+            content.text = text
+            reader.close()
+        } catch (e: IOException) {
+            e.printStackTrace()
         }
     }
 }
