@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val titleResId = resources.getIdentifier("sura_$suraNumber", "string", packageName)
-        val audioResId = resources.getIdentifier("sura_$suraNumber", "raw", packageName)
+        val audioResId = resources.getIdentifier("s$suraNumber", "raw", packageName)
 
 
 
