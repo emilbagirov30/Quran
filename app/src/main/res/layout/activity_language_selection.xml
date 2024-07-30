@@ -12,7 +12,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать!Выберите язык:"
+        android:text="@string/select_language_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="@color/black">
     </TextView>
 
@@ -20,7 +22,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-      android:layout_marginVertical="10dp"
+      android:layout_marginTop="10dp"
     android:gravity="center">
 
     <ImageView
@@ -35,10 +37,22 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:src="@drawable/rus"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="@dimen/margin_base"
         android:background="@drawable/language_selector" />
 
 </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/next"
+        android:visibility="gone"
+        >
+
+    </Button>
 
 
 </LinearLayout>

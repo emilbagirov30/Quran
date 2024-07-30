@@ -1,14 +1,459 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
-        android:title="Home" />
-    <item
-        android:id="@+id/nav_gallery"
+        android:id="@+id/it_sura_1"
+        android:title="@string/sura_1"
+      />
 
-        android:title="Gallery" />
     <item
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/it_sura_2"
+        android:title="@string/sura_2" />
 
-        android:title="Slideshow" />
+    <item
+        android:id="@+id/it_sura_3"
+        android:title="@string/sura_3" />
+
+    <item
+        android:id="@+id/it_sura_4"
+        android:title="@string/sura_4" />
+
+    <item
+        android:id="@+id/it_sura_5"
+        android:title="@string/sura_5" />
+
+    <item
+        android:id="@+id/it_sura_6"
+        android:title="@string/sura_6" />
+
+    <item
+        android:id="@+id/it_sura_7"
+        android:title="@string/sura_7" />
+
+    <item
+        android:id="@+id/it_sura_8"
+        android:title="@string/sura_8" />
+
+    <item
+        android:id="@+id/it_sura_9"
+        android:title="@string/sura_9" />
+
+    <item
+        android:id="@+id/it_sura_10"
+        android:title="@string/sura_10" />
+
+    <item
+        android:id="@+id/it_sura_11"
+        android:title="@string/sura_11" />
+
+    <item
+        android:id="@+id/it_sura_12"
+        android:title="@string/sura_12" />
+
+    <item
+        android:id="@+id/it_sura_13"
+        android:title="@string/sura_13" />
+
+    <item
+        android:id="@+id/it_sura_14"
+        android:title="@string/sura_14" />
+
+    <item
+        android:id="@+id/it_sura_15"
+        android:title="@string/sura_15" />
+
+    <item
+        android:id="@+id/it_sura_16"
+        android:title="@string/sura_16" />
+
+    <item
+        android:id="@+id/it_sura_17"
+        android:title="@string/sura_17" />
+
+    <item
+        android:id="@+id/it_sura_18"
+        android:title="@string/sura_18" />
+
+    <item
+        android:id="@+id/it_sura_19"
+        android:title="@string/sura_19" />
+
+    <item
+        android:id="@+id/it_sura_20"
+        android:title="@string/sura_20" />
+
+    <item
+        android:id="@+id/it_sura_21"
+        android:title="@string/sura_21" />
+
+    <item
+        android:id="@+id/it_sura_22"
+        android:title="@string/sura_22" />
+
+    <item
+        android:id="@+id/it_sura_23"
+        android:title="@string/sura_23" />
+
+    <item
+        android:id="@+id/it_sura_24"
+        android:title="@string/sura_24" />
+
+    <item
+        android:id="@+id/it_sura_25"
+        android:title="@string/sura_25" />
+
+    <item
+        android:id="@+id/it_sura_26"
+        android:title="@string/sura_26" />
+
+    <item
+        android:id="@+id/it_sura_27"
+        android:title="@string/sura_27" />
+
+    <item
+        android:id="@+id/it_sura_28"
+        android:title="@string/sura_28" />
+
+    <item
+        android:id="@+id/it_sura_29"
+        android:title="@string/sura_29" />
+
+    <item
+        android:id="@+id/it_sura_30"
+        android:title="@string/sura_30" />
+
+    <item
+        android:id="@+id/it_sura_31"
+        android:title="@string/sura_31" />
+
+    <item
+        android:id="@+id/it_sura_32"
+        android:title="@string/sura_32" />
+
+    <item
+        android:id="@+id/it_sura_33"
+        android:title="@string/sura_33" />
+
+    <item
+        android:id="@+id/it_sura_34"
+        android:title="@string/sura_34" />
+
+    <item
+        android:id="@+id/it_sura_35"
+        android:title="@string/sura_35" />
+
+    <item
+        android:id="@+id/it_sura_36"
+        android:title="@string/sura_36" />
+
+    <item
+        android:id="@+id/it_sura_37"
+        android:title="@string/sura_37" />
+
+    <item
+        android:id="@+id/it_sura_38"
+        android:title="@string/sura_38" />
+
+    <item
+        android:id="@+id/it_sura_39"
+        android:title="@string/sura_39" />
+
+    <item
+        android:id="@+id/it_sura_40"
+        android:title="@string/sura_40" />
+
+    <item
+        android:id="@+id/it_sura_41"
+        android:title="@string/sura_41" />
+
+    <item
+        android:id="@+id/it_sura_42"
+        android:title="@string/sura_42" />
+
+    <item
+        android:id="@+id/it_sura_43"
+        android:title="@string/sura_43" />
+
+    <item
+        android:id="@+id/it_sura_44"
+        android:title="@string/sura_44" />
+
+    <item
+        android:id="@+id/it_sura_45"
+        android:title="@string/sura_45" />
+
+    <item
+        android:id="@+id/it_sura_46"
+        android:title="@string/sura_46" />
+
+    <item
+        android:id="@+id/it_sura_47"
+        android:title="@string/sura_47" />
+
+    <item
+        android:id="@+id/it_sura_48"
+        android:title="@string/sura_48" />
+
+    <item
+        android:id="@+id/it_sura_49"
+        android:title="@string/sura_49" />
+
+    <item
+        android:id="@+id/it_sura_50"
+        android:title="@string/sura_50" />
+
+    <item
+        android:id="@+id/it_sura_51"
+        android:title="@string/sura_51" />
+
+    <item
+        android:id="@+id/it_sura_52"
+        android:title="@string/sura_52" />
+
+    <item
+        android:id="@+id/it_sura_53"
+        android:title="@string/sura_53" />
+
+    <item
+        android:id="@+id/it_sura_54"
+        android:title="@string/sura_54" />
+
+    <item
+        android:id="@+id/it_sura_55"
+        android:title="@string/sura_55" />
+
+    <item
+        android:id="@+id/it_sura_56"
+        android:title="@string/sura_56" />
+
+    <item
+        android:id="@+id/it_sura_57"
+        android:title="@string/sura_57" />
+
+    <item
+        android:id="@+id/it_sura_58"
+        android:title="@string/sura_58" />
+
+    <item
+        android:id="@+id/it_sura_59"
+        android:title="@string/sura_59" />
+
+    <item
+        android:id="@+id/it_sura_60"
+        android:title="@string/sura_60" />
+
+    <item
+        android:id="@+id/it_sura_61"
+        android:title="@string/sura_61" />
+
+    <item
+        android:id="@+id/it_sura_62"
+        android:title="@string/sura_62" />
+
+    <item
+        android:id="@+id/it_sura_63"
+        android:title="@string/sura_63" />
+
+    <item
+        android:id="@+id/it_sura_64"
+        android:title="@string/sura_64" />
+
+    <item
+        android:id="@+id/it_sura_65"
+        android:title="@string/sura_65" />
+
+    <item
+        android:id="@+id/it_sura_66"
+        android:title="@string/sura_66" />
+
+    <item
+        android:id="@+id/it_sura_67"
+        android:title="@string/sura_67" />
+
+    <item
+        android:id="@+id/it_sura_68"
+        android:title="@string/sura_68" />
+
+    <item
+        android:id="@+id/it_sura_69"
+        android:title="@string/sura_69" />
+
+    <item
+        android:id="@+id/it_sura_70"
+        android:title="@string/sura_70" />
+
+    <item
+        android:id="@+id/it_sura_71"
+        android:title="@string/sura_71" />
+
+    <item
+        android:id="@+id/it_sura_72"
+        android:title="@string/sura_72" />
+
+    <item
+        android:id="@+id/it_sura_73"
+        android:title="@string/sura_73" />
+
+    <item
+        android:id="@+id/it_sura_74"
+        android:title="@string/sura_74" />
+
+    <item
+        android:id="@+id/it_sura_75"
+        android:title="@string/sura_75" />
+
+    <item
+        android:id="@+id/it_sura_76"
+        android:title="@string/sura_76" />
+
+    <item
+        android:id="@+id/it_sura_77"
+        android:title="@string/sura_77" />
+
+    <item
+        android:id="@+id/it_sura_78"
+        android:title="@string/sura_78" />
+
+    <item
+        android:id="@+id/it_sura_79"
+        android:title="@string/sura_79" />
+
+    <item
+        android:id="@+id/it_sura_80"
+        android:title="@string/sura_80" />
+
+    <item
+        android:id="@+id/it_sura_81"
+        android:title="@string/sura_81" />
+
+    <item
+        android:id="@+id/it_sura_82"
+        android:title="@string/sura_82" />
+
+    <item
+        android:id="@+id/it_sura_83"
+        android:title="@string/sura_83" />
+
+    <item
+        android:id="@+id/it_sura_84"
+        android:title="@string/sura_84" />
+
+    <item
+        android:id="@+id/it_sura_85"
+        android:title="@string/sura_85" />
+
+    <item
+        android:id="@+id/it_sura_86"
+        android:title="@string/sura_86" />
+
+    <item
+        android:id="@+id/it_sura_87"
+        android:title="@string/sura_87" />
+
+    <item
+        android:id="@+id/it_sura_88"
+        android:title="@string/sura_88" />
+
+    <item
+        android:id="@+id/it_sura_89"
+        android:title="@string/sura_89" />
+
+    <item
+        android:id="@+id/it_sura_90"
+        android:title="@string/sura_90" />
+
+    <item
+        android:id="@+id/it_sura_91"
+        android:title="@string/sura_91" />
+
+    <item
+        android:id="@+id/it_sura_92"
+        android:title="@string/sura_92" />
+
+    <item
+        android:id="@+id/it_sura_93"
+        android:title="@string/sura_93" />
+
+    <item
+        android:id="@+id/it_sura_94"
+        android:title="@string/sura_94" />
+
+    <item
+        android:id="@+id/it_sura_95"
+        android:title="@string/sura_95" />
+
+    <item
+        android:id="@+id/it_sura_96"
+        android:title="@string/sura_96" />
+
+    <item
+        android:id="@+id/it_sura_97"
+        android:title="@string/sura_97" />
+
+    <item
+        android:id="@+id/it_sura_98"
+        android:title="@string/sura_98" />
+
+    <item
+        android:id="@+id/it_sura_99"
+        android:title="@string/sura_99" />
+
+    <item
+        android:id="@+id/it_sura_100"
+        android:title="@string/sura_100" />
+
+    <item
+        android:id="@+id/it_sura_101"
+        android:title="@string/sura_101" />
+
+    <item
+        android:id="@+id/it_sura_102"
+        android:title="@string/sura_102" />
+
+    <item
+        android:id="@+id/it_sura_103"
+        android:title="@string/sura_103" />
+
+    <item
+        android:id="@+id/it_sura_104"
+        android:title="@string/sura_104" />
+
+    <item
+        android:id="@+id/it_sura_105"
+        android:title="@string/sura_105" />
+
+    <item
+        android:id="@+id/it_sura_106"
+        android:title="@string/sura_106" />
+
+    <item
+        android:id="@+id/it_sura_107"
+        android:title="@string/sura_107" />
+
+    <item
+        android:id="@+id/it_sura_108"
+        android:title="@string/sura_108" />
+
+    <item
+        android:id="@+id/it_sura_109"
+        android:title="@string/sura_109" />
+
+    <item
+        android:id="@+id/it_sura_110"
+        android:title="@string/sura_110" />
+
+    <item
+        android:id="@+id/it_sura_111"
+        android:title="@string/sura_111" />
+
+    <item
+        android:id="@+id/it_sura_112"
+        android:title="@string/sura_112" />
+
+    <item
+        android:id="@+id/it_sura_113"
+        android:title="@string/sura_113" />
+
+    <item
+        android:id="@+id/it_sura_114"
+        android:title="@string/sura_114" />
 </menu>

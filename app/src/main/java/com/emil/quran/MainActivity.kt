@@ -28,15 +28,11 @@ class MainActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.nav_home -> {
-                    // Handle the home action
-                }
-                R.id.nav_gallery -> {
-                    // Handle the gallery action
-                }
-                R.id.nav_slideshow -> {
-                    // Handle the slideshow action
-                }
+               // R.id.nav_home -> {
+                //    // Handle the home action
+             //   }
+
+
             }
             drawerLayout.closeDrawers()
             true
