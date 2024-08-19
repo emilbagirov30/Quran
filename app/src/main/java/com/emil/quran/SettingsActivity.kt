@@ -71,7 +71,7 @@ apply.setOnClickListener {
         startActivity(switchingToMainActivity)
         return true
     }
-    fun restartApp() {
+    private fun restartApp() {
         val intent = packageManager.getLaunchIntentForPackage(packageName)
         val componentName = intent?.component
         val mainIntent = Intent.makeRestartActivityTask(componentName)
